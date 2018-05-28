@@ -1,0 +1,5 @@
+- hosts: container
+  connection: docker
+  tasks:
+    - name: file
+      file: path=/tmp/hoge.txt state=touch

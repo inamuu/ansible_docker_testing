@@ -1,0 +1,4 @@
+- hosts: container
+  connection: docker
+  roles:
+    - files

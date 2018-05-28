@@ -1,0 +1,5 @@
+[docker_host]
+localhost 
+
+[container]
+amzl_ja
