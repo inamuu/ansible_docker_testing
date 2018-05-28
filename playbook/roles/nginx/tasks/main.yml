@@ -10,3 +10,4 @@
     group: root
   loop:
     - { src: nginx.conf, dest: .}
+  notify: configtest nginx
