@@ -1,4 +1,4 @@
-- hosts: container
+- hosts: amzl
   connection: docker
   roles:
     - files

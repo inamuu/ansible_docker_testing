@@ -3,7 +3,7 @@ services:
   amzl:
     build: amazonlinux
     image: amzl:latest
-    container_name: amzl_ja
+    container_name: amzl
     tty: true
   centos7:
     image: centos:latest
