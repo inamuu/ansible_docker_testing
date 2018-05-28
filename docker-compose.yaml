@@ -1,0 +1,11 @@
+version: '3'
+services:
+  amzl:
+    build: amazonlinux
+    image: amzl:latest
+    container_name: amzl_ja
+    tty: true
+  centos7:
+    image: centos:latest
+    container_name: centos7
+    tty: true
