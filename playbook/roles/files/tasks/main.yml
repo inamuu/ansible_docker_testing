@@ -1,2 +1,2 @@
 - name: create file
-  file: dest=./test.txt
+  file: dest=./test.txt state=touch mode=755
