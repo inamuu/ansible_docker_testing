@@ -1,5 +1,8 @@
 [docker_host]
 localhost 
 
-[container]
+[container_amzl]
 amzl
+
+[container_centos7]
+centos7

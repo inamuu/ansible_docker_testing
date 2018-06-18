@@ -1,0 +1,6 @@
+- name: Create testuser
+  user:
+    name: testuser
+  tags:
+    - base
+    

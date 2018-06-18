@@ -1,5 +1,6 @@
-- hosts: amzl
+- hosts: all
   connection: docker
   roles:
-    #- files
+    - base
+    - files
     - nginx
