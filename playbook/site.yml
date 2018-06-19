@@ -1,5 +1,6 @@
 - hosts: amzl
   connection: docker
   roles:
-    #- files
+    - files
     - nginx
+    - slack
