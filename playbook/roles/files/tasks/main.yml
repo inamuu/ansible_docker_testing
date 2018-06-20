@@ -1,2 +1,3 @@
-- name: create file
-  file: dest=./test.txt state=file mode=755
+- name: copy file
+  copy: dest=./test.txt src=files/test.txt
+  tags: file

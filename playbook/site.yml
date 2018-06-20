@@ -1,8 +1,9 @@
-- hosts: amzl
+- hosts: container_centos7
   connection: docker
   vars_files:
     - group_vars/keys
   roles:
     - files
+    - base
     - nginx
     - slack
