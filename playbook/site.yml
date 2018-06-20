@@ -1,6 +1,6 @@
-- hosts: all
+- hosts: container_centos7
   connection: docker
   roles:
     - base
-    - files
+    #`- files
     - nginx

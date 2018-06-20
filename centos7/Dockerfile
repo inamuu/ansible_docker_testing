@@ -1,4 +1,4 @@
-FROM amazonlinux:latest
+FROM centos:7
 
 RUN yum -y reinstall glibc-common
 ENV LANG ja_JP.UTF-8
