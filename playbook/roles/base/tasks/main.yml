@@ -1,6 +1,8 @@
-- name: Create testuser
-  user:
-    name: testuser
-  tags:
-    - base
-    
+- name: set hostname
+  lineinfile:
+    dest=./test.txt
+    state=present
+    backrefs=yes
+    regexp="^HOSTNAME=fuga" line="HOSTNAME=hoge"
+  ignore_errors: yes
+  tags: base
