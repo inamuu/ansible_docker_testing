@@ -2,5 +2,4 @@
   connection: docker
   roles:
     - base
-    #`- files
-    - nginx 
+    - nginx
