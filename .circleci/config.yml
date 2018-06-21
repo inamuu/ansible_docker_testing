@@ -8,4 +8,5 @@ jobs:
     steps:
       - checkout
       - run: pip install -r ./.circleci/requirements.txt
+      - run: find . -name "*.yml" | xargs -IARG yamllint -c .circleci/yamllint/config ARG
       - run: ansible-lint ./playbook/*.yml -c .circleci/.ansible-lint
