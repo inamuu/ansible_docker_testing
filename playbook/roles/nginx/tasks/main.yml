@@ -6,11 +6,11 @@
 
 - name: copy conf
   copy:
-    src: "roles/nginx/files/{{ item.src}}"
+    src: "roles/nginx/files/{{ item.src }}"
     dest: "/etc/nginx/{{ item.dest }}"
     backup: no
     owner: root
     group: root
   loop:
-    - { src: nginx.conf, dest: .}
+    - { src: nginx.conf, dest: . }
   notify: configtest nginx
