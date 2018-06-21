@@ -2,5 +2,5 @@
   slack:
     token: "{{ slack_api_key }}"
     msg: '{{ inventory_hostname }} deployed'
-    color: good  
+    color: good
   delegate_to: localhost
